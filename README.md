@@ -30,7 +30,7 @@ To compare all implementations you will have to install the following (but to st
 It is absolutely crucial to install MeshLab as it handles all mesh preprocessing as well as generating Hausdorff distance metrics.
 If you wish to generate renders (in .png) you will also need Blender.
 
-You can either install (or place) the above list of program in locations provided in the `MeshSimplificationComparer.exe.config` file or you can change the values in this file to your preference, here is a part of this file:
+You can either install (or place) the above list of programs in locations provided in the `MeshSimplificationComparer.exe.config` file or you can change the values in this file to your preference, here is a part of this file:
 ```
   <appSettings>
     <add key="meshlab" value="C:\Program Files\VCG\MeshLab\meshlabserver.exe" />
