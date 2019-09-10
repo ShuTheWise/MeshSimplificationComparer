@@ -49,7 +49,7 @@ You can either install (or place) the above list of program in locations provide
 
 ## How to use
 
-1. Navigate to the folder containing `MeshSimplificationComparer.exe` and create a folder called `Models` inside this directory if you haven't done already. Make sure there is at least one triangular mesh inside the folder in one of the supported file formats.
+1. Navigate to the folder containing `MeshSimplificationComparer.exe` and create a folder called `Models` inside this directory if it's not there already. Make sure there is at least one triangular mesh inside the folder in a supported file format.
 2. Run `MeshSimplificationComparer.exe` this should prompt a list of models like the following:
 ```
 4 models found:
