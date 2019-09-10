@@ -1,5 +1,5 @@
 # MeshSimplificationComparer
-Program for comparing various triangular mesh simplification implementations, i.a Blender, OpenFlipper, MeshLab, Progressive Meshes, CGAL Surface Mesh Simplification
+Program for comparing various triangular mesh simplification implementations, i.a Blender, OpenFlipper, MeshLab, Progressive Meshes, CGAL Surface Mesh Simplification.
 
 ## Functionality
 
