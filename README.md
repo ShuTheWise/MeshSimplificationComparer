@@ -102,7 +102,7 @@ Do not use operation 2 unless you are sure that all meshes in the `meshes` folde
 After running operation 2 you will find the results in `mc_output\<Your working directory name>\data`.
 Running operation 3 outputs the renders in `mc_output\<Your working directory name>\renders`.
 
-You can run the application many selecting different algoritms and operations but you have to keep in mind the state of your data. For example, if you wish to solely run operation 3 or 4 there have to be simplified meshes cached in the `meshes` folder.
+You can run the application many times selecting different algoritms and operations but you have to keep in mind the state of your data. For example, if you wish to solely run operation 3 or 4 there have to be simplified meshes cached in the `meshes` folder.
 
 ### Supported input mesh files formats
 
