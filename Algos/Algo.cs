@@ -101,6 +101,21 @@ namespace MeshSimplificationComparer
             return plots;
         }
 
+        public Plot PlotTimeResults()
+        {
+            string header = "\n%" + ao.name + "\n" + $@"\addplot coordinates " + "{\n";
+            Plot p = new Plot();
+
+            p.name = "timeResults";
+            p.value = header;
+
+            foreach (var item in results.results)
+            {
+                p.value += $"({item.hd.tris},{item.hd.time})\n";
+            }
+            p.value += "};";
+            return p;
+        }
         public class Results
         {
             public float bboxDiag;

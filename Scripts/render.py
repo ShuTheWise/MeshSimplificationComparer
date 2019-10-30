@@ -27,24 +27,27 @@ def render_view(view, obb):
   bpy.ops.view3d.viewnumpad(context, 'EXEC_DEFAULT', type=view)
   bpy.ops.view3d.camera_to_view(context, 'EXEC_DEFAULT')
   bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
-  bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
+  #bpy.ops.view3d.camera_to_view_selected(context, 'EXEC_DEFAULT')
   
-  bpy.ops.object.select_all(action='DESELECT')
+  #bpy.ops.object.select_all(action='DESELECT')
+  obb.select = False
+  obb.show_wire = True
+  obb.show_all_edges = True
 
   bpy.ops.render.opengl(write_still=True)
   bpy.data.images['Render Result'].save_render(path)
@@ -71,6 +74,11 @@ for o in bpy.data.objects:
     else:
         o.select = False
 
+mat = bpy.data.materials.new(name="Material")
+mat.diffuse_color = (1, 1, 1) #change color
+mat.diffuse_intensity = 1.0 #change intensity 
+o.data.materials.append(mat) #assign material
+
 ob = bpy.context.object
 obs = bpy.context.scene.objects
 
@@ -79,6 +87,7 @@ if ob is None:
         if o.type == 'MESH':
             ob = o
             break
+
 
 #if ob is not None:
 #    for ob in obs:

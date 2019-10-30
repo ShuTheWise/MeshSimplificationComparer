@@ -420,6 +420,10 @@ namespace MeshSimplificationComparer
                     }
                     File.AppendAllText(plotPath, item.value);
                 }
+
+                var r2 = algo.PlotTimeResults();
+                var plotPathTimeResults = Path(Subfolder.data, r2.name, Ext.tex);
+                File.AppendAllText(plotPathTimeResults, r2.value);
             }
 
             foreach (var plotPath in plotPaths)
