@@ -4,7 +4,7 @@ Program for comparing various triangular mesh simplification implementations, i.
 
 ## Functionality
 
-This program is capable of running up to 8 mesh simplification programs at five levels of detail - 50\%, 25\%, 5\%, 2\% i 1\% (running all 8 results in creating 40 simplified meshes). Each level of detail represents a percentage of triangles of the output mesh compared to the input mesh. As of now the steps are hard-coded.
+This program is capable of running up to 8 mesh simplification programs at six levels of detail - 50\%, 25\%, 10\%, 5\%, 2\% i 1\% (running all 8 results in creating 40 simplified meshes). Each level of detail represents a percentage of triangles of the output mesh compared to the input mesh. As of now the steps are hard-coded.
 
 Foreach of the simplified meshes it can also do the following:
 
@@ -97,7 +97,7 @@ Enter id's just like you would previously, i.e. `0, 4, 6` runs MeshLabQem, Blend
 
 Same way of entering as before.
 
-Executing operation 0 runs all the meshes you have chosen against algorithms chosen at five levels of detail - 50\%, 25\%, 5\%, 2\% i 1\%. Output meshes will be put in `mc_output\<Your working directory name>\meshes`.
+Executing operation 0 runs all the meshes you have chosen against algorithms chosen at six levels of detail - 50\%, 25\%, 10% , 5\%, 2\% i 1\%. Output meshes will be put in `mc_output\<Your working directory name>\meshes`.
 Do not use operation 2 unless you are sure that all meshes in the `meshes` folder are in .obj file format. You can convert all meshes to this format using operation 1.
 After running operation 2 you will find the results in `mc_output\<Your working directory name>\data`.
 Running operation 3 outputs the renders in `mc_output\<Your working directory name>\renders`.
