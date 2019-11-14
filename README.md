@@ -26,7 +26,7 @@ To compare all implementations you will have to install the following (but to st
 - OpenFlipper 3.1: <https://www.openflipper.org/>
 - **Blender 2.79**: <https://www.blender.org/download/releases/2-79/>
 - MyQem: <https://github.com/ShuTheWise/MyQem>
-- Fogleman: <https://github.com/fogleman,> this also requires Golang <https://golang.org/>
+- Fogleman: <https://github.com/fogleman>, this also requires Golang <https://golang.org/>
 - SimplifyCGAL: <https://github.com/ShuTheWise/SimplifyCGAL>
 - Mesh processing library: <https://github.com/microsoft/Mesh-processing-library,> library containing Progressive Meshes algorithm, if you wish to run this you will also need perl  <https://www.perl.org/>
 
